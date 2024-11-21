@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --background: linear-gradient(90deg, #0A0908, #1A1A1A);
+    --logo-color: #FFD700; /* Vibrant gold */
+    --button-color: #5E503F;
+    --button-hover-color: #A9927D;
+    --bottom-div: #1A1A1A;
+    --about-div: #2C2C2C;
+    --serviceCard: #3E3E3E;
+}
+
+
+:root {
+    --card-background: linear-gradient(135deg, #0A0908, #1A1A1A);
+    --card-hover-shadow: rgba(0, 0, 0, 0.5);
+    --overlay-color: rgba(0, 0, 0, 0.7);
+    --text-color: #FFD700;
+    --hover-scale: 1.08;
+  }
+  
+
+html, body {
+    color: white;
+    background-color: var(--bottom-div);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

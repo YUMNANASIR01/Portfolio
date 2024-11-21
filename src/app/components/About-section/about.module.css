@@ -1,0 +1,66 @@
+.about{
+    width: 100%;
+    background-color: var(--about-div);
+    padding: 10rem  7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutleftDiv{
+    width : 40.70%;
+
+}
+.aboutleftDiv h1{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 72px;
+    margin-bottom: .5rem;
+}
+.aboutleftDiv p{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: var( --logo-color);
+}
+ .detailstext{
+    font-weight: 400;
+    font-size: 16.88px;
+    line-height: 27px;
+    margin-top: 23.5px;
+    color: white;
+    margin-bottom: 32.5px;
+} 
+@media(max-width: 768px){
+    .about{
+        padding: 3.75rem 2.5rem 10rem 2.5rem;
+    }.aboutleftDiv{
+      width: 45.182%;
+    }
+}
+
+@media(max-width: 390px){
+    .about{
+        flex-direction: column;
+
+    }.aboutleftDiv{
+      width: 90%;
+    }
+    .aboutrightdiv{
+     margin-top: 50px;
+    }
+}
+
+
+@media(max-width: 300px){
+    .about{
+        flex-direction: column;
+
+    }.aboutleftDiv{
+      width: 90%;
+    }
+   .aboutrightdiv{
+     margin-top: 20px;
+     height: 80px;
+    }
+     
+}

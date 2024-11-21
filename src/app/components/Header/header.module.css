@@ -1,0 +1,156 @@
+
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 5.25rem;
+    background: var(--background);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 24px 43px;
+    transition: background-color 0.3s ease;
+}
+
+
+.nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav h1 {
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
+    color: var(--logo-color);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.navul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: color 0.3s ease;
+}
+
+.nav ul li {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: var(--logo-color);
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav ul li:hover {
+    color: var(--button-hover-color);
+    transform: scale(1.1);
+}
+
+.nav ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--logo-color);
+    opacity: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav ul li:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+
+.menu {
+    display: none;
+    color: var(--logo-color);
+    cursor: pointer;
+    z-index: 150;
+}
+
+@media (max-width: 768px) {
+    .navul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5.25rem;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 5.25rem);
+        background: linear-gradient(180deg, #1A1A1A, #222222);
+        padding: 50px;
+        gap: 20px;
+        z-index: 100;
+    }
+
+    .closed {
+        position: absolute;
+        top: -4px;
+        padding-top: 5px;
+        right: 88px;
+        color: var(--logo-color);
+        cursor: pointer;
+    }
+
+    .nav ul li {
+        font-size: 16px;
+    }
+}
+
+
+
+
+@media (max-width: 300px) {
+    .header {
+        padding: 0.5rem;
+        height: 3.5rem;
+    }
+
+    .nav h1 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .menu {
+        font-size: 1rem;
+    }
+
+    .active {
+        top: 3.5rem;
+        
+    }
+
+    .nav ul li {
+        font-size: 14px;
+    }
+    .closed {
+        position: absolute;
+        top: 4px;
+        right: 3px;
+        color: var(--logo-color);
+        cursor: pointer;
+        padding-bottom: 10px;
+    }
+
+}
+
+

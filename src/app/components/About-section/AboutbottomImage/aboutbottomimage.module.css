@@ -1,0 +1,31 @@
+.aboutbottomimage{
+    width: 100%;
+    background-color: var( --bottom-div );
+    padding: 1.25rem 5rem;
+    display:  flex;
+    gap : 4rem;
+    align-items: center;
+}
+@media (max-width: 768px){
+    .aboutbottomimage{
+      padding: 20px 0px;
+      gap: 0rem;
+    }
+}
+
+@media (max-width: 390px){
+  .aboutbottomimage{
+  padding: 2.625rem 0rem;
+ gap: 3.125rem;
+ flex-wrap: wrap;
+ justify-content: flex-start;
+  }
+}
+
+
+@media (max-width: 300px) {
+  .aboutbottomimage {
+      padding: 5px;
+      gap: 5px; 
+  }
+}

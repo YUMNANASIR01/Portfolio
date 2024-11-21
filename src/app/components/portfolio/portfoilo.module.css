@@ -1,0 +1,66 @@
+.Portfoilo{
+    width: 100%;
+    background-color: var(--background);
+    text-align: center;
+    padding: 9rem 2rem;
+}
+.Portfoilo h1{
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  
+}
+.Portfoilo span{
+    color: var(--logo-color);
+    
+}
+.Portfoilo p{
+    font-size: 1.0637rem;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 6rem;
+}
+.mywork{
+    width: 100%;
+    display: grid;
+    gap : 5.9375rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media(max-width:768px){
+    .mywork{
+        grid-template-columns: repeat(2, 1fr);
+        gap : 112px;
+    }
+}
+
+
+@media(max-width:390px){
+    .mywork{
+        grid-template-columns: repeat(1, 1fr);
+        gap : 0px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .Portfoilo {
+        padding: 3rem 0.5rem; 
+    }
+
+    .Portfoilo h1 {
+        font-size: 1.5rem; 
+        line-height: 2rem;
+        margin-bottom: 0.75rem; 
+    }
+
+    .Portfoilo p {
+        font-size: 0.75rem; 
+        line-height: 1rem; 
+        margin-bottom: 1.5rem; 
+    }
+
+    .mywork {
+        gap: 1rem;
+    }
+}

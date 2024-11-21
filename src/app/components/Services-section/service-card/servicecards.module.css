@@ -1,0 +1,27 @@
+.card{
+    padding: 1.5rem 1rem ;
+    background-color: var( --serviceCard);
+    border-radius: 12px;
+    text-align: start;
+    transition: background-color 0.3s ease-in-out;
+    &:hover{
+        background-color: #444444;
+    }
+   }
+   .cardimg{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      margin-bottom: 48px;
+   
+   }
+   .card h1{
+       font-size: 22.5px;
+       line-height: 32px;
+       margin-bottom: 15.5px;
+   }
+   .card p {
+       font-size: 15px;
+       line-height: 24px;
+       margin-bottom: 0px;
+   }

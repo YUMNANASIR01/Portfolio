@@ -1,0 +1,23 @@
+.button{
+    /* padding: 10.5008px 48px ; */
+    padding: 12px 30px;
+    background-color: var(--button-color);
+    border:  10.56px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: auto;
+    &:hover{
+        background-color: var( --button-hover-color);
+
+    }
+}
+
+
+
+@media (max-width: 300px) {
+    .button {
+        padding: 8px 15px;
+        font-size: 12px; 
+        border-radius: 4px; 
+    }
+}
