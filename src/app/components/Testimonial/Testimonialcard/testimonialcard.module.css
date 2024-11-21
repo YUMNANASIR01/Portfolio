@@ -7,7 +7,7 @@
     background-color: var( --bottom-div);
     text-align: center;
     border-radius: 1rem;
-    border-top: 3px solid var(--logo-color);
+    border-top: 4px solid var(--logo-color);
     margin-right: 32px;
 }
 .cardimage{
