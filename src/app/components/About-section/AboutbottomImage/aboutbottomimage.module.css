@@ -15,10 +15,11 @@
 
 @media (max-width: 390px){
   .aboutbottomimage{
-  padding: 2.625rem 0rem;
- gap: 3.125rem;
+  padding: 40px 0rem;
+ gap: 45px;
  flex-wrap: wrap;
  justify-content: flex-start;
+ margin-left: 20px;
   }
 }
 
