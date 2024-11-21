@@ -21,7 +21,7 @@ export const portfolioCard = [
       type: "image",
       src: "/project-4.jpeg",
       title: "Interactive Next.js portfolio with functional download button and navigation links.",
-      href: "https://vercel.com/yumna-nasirs-projects/assingment-4-bxbb"
+      href: "https://assingment-4-bxbb.vercel.app/"
     },
     {
       id: 4,
