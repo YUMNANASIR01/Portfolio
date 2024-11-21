@@ -16,7 +16,7 @@
 @media (max-width: 390px){
   .aboutbottomimage{
   padding: 40px 0rem;
- gap: 45px;
+ gap: 43px;
  flex-wrap: wrap;
  justify-content: flex-start;
  margin-left: 20px;
